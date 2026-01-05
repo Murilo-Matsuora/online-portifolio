@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Portifólio - Murilo Matsuora{% endblock %}
+
+{% block content %}
+<section class="position-relative overflow-hidden px-md-3 py-md-5 text-center bg-body-tertiary" id="welcome">
+    <div class="py-5 text-center container welcome-message">
+
+        <div class="row py-lg-5">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <h1 class="fw-light display-1">Olá!</h1>
+                <p class="lead text-body-secondary fs-3">Seja bem-vindo(a) ao meu portifólio. Meu nome é Murilo Matsuora e
+                    sou estudante de Computação. Espero poder rechear está página com mais
+                    experiências logo cedo!</p>
+                    <p class="lead text-body-secondary fs-3">(ATENÇÃO: Este site pode estar desatualizado!)</p>
+                    <!-- <p> <a href="#experiences" class="btn btn-orange my-2">Ir para experiências</a> -->
+                <div class="signature"> 
+                    <p class="lead text-body-secondary me-1 fw-bold">-</p>
+                    <img src="{{ url_for('static', filename='images/assinatura.svg') }}" alt="signature" class="signature-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="experiences">
+    <div class="position-relative overflow-hidden p-3 py-5 p-md-8 text-center">
+        <div class="col-md-6 pt-lg-5 pb-lg-2 mx-auto mt-3">
+            <h2 class="display-3 fw-bold">Experiências</h2>
+            <p class="display-8 fw-light fst-italic fs-3">(Clique nos cards para saber mais)</p>
+        </div>
+        {% for category_key, category_data in experiences.items() %}
+        <div class="container py-5">
+            <div class="experiences-category">
+                <h2 class="lead fw-light mb-5 fs-1">{{ category_data.label }}</h2>
+            </div>
+            <div class="row d-flex justify-content-center">
+                {% for project_key, project_value in category_data.projects.items() %}
+                <div class="col-lg-4 col-sm-12 pb-lg-0 pb-2">
+                    <div class="experiences-card">
+                        <div class="experiences-card-title">
+                            <a href="{{ url_for('experience', category=category_key, name=project_key) }}" class="no-decoration-link">
+                                <h2 class="fs-4 fw-bold experiences-title">{{ project_value.title }}</h2>
+                                <p class="lead experiences-subtitle">{{ project_value.period }}</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+        </div>
+        {% endfor %}
+    </div>
+</section>
+</section>
+{% endblock %}

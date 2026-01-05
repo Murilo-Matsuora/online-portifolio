@@ -1,0 +1,86 @@
+{
+    "extension_projects": {
+        "label": "Projetos de Extensão",
+        "projects": {
+            "icem": {
+                "title": "Iniciação Científica no Ensino Médio",
+                "period": "Primeiro e segundo semestres de 2024",
+                "description": "<p style='text-indent: 2em;'>Divulguei para alunos do ensino médio a Iniciação Cinetífica. Eles formaram gurpos de três ou quatro pessoas e discutiram propostas. Depois, durante o semestre, eu acompanhei o progresso das pesquisas deles.</p><p style='text-indent: 2em;'>Todos estavam muito bons, mas o que pessoalemente achei mais interessante foi um que propunha uma solução para diminuir quedas de energia ao encaixar uma peça feita de um material resistente nos transformadores.</p><p style='text-indent: 2em;'>Esse projeto me ajudou a melhorar minha comunicação.</p>"
+            },
+            "cfjc": {
+                "title": "Centro de Formação de Jovens Cientistas",
+                "period": "Primeiro semestre de 2025",
+                "description": "<p style='text-indent: 2em;'>Ajudei alunos do ensino médio a desenvolverem um jogo sobre proteção ambiental. Em um grupo de cerca de doze alunos, sendo que a maioria era responsável pela arte, era necessária a constante comunicação e grande trabalho em equipe.</p><p style='text-indent: 2em;'>Cada um tinha tarefas individuais que eram colocadas numa planilha, e eram feitas reuniões semanais para manter o controle do progresso.</p><p style='text-indent: 2em;'>Essa experiência foi uma grande lição no trabalho em equipe, além do conhecimento técnico de trabalhar com C# e Unity.</p>",
+                "images": ["cfjc.jpeg", "unity_game.png"]
+                },
+            "mdti": {
+                "title": "Mundo Digital na Terceira Idade",
+                "period": "Segundo semestre de 2025",
+                "description": "<p style='text-indent: 2em;'>Visitei idosos e compartilheis os possíveis riscos que o mundo digital apresenta. Falei também de pontos positivos da tecnologia, mas o objetivo era gerar consciência do quão perigosa ela pode ser.</p><p style='text-indent: 2em;'>E claro, sempre de forma clara e acessível!</p><p style='text-indent: 2em;'>Esse projeto consolidou minhas habilidades de comunicação, especialmente para um público que não possui conhecimento no tema abordado.</p>",
+                "images": ["mdti.jpeg"]
+            }
+        }
+    },
+
+    "academic_projects": {
+        "label": "Projetos Acadêmicos",
+        "projects": {
+            "ia_previsao_combustivel": {
+                "title": "Uso de IA para prever preços de combustíveis",
+                "period": "Segundo semestre de 2025, matéria de Aprendizado de Máquina",
+                "description": "<p style='text-indent: 2em;'>Treinei dois modelos de IA: um para prever os futuros preços de combustíveis e outro para prever qual sequência de compras e vendas gera mais lucro. </p>"
+            },
+            "sistema_de_filmes": {
+                "title": "Sistema para consulta e avaliação de filmes",
+                "period": "Segundo semestre de 2025, matéria de Banco de Dados II",
+                "description": "<p style='text-indent: 2em;'>Usei JavaScript, Embedded JavaScript, HTML e CSS para criar um site de consulta e avaliação de filmes.</p><p style='text-indent: 2em;'>O sistema foi primeiramente feito com PostgreSQL e depois foi feita a transição para MongoDB.</p>"
+            }
+            
+        }
+
+    },
+
+    "personal_projects": {
+        "label": "Projetos Pessoas",
+        "projects": {
+            "portifolio": {
+                "title": "Portifílio On-line",
+                "period": "Segundo semestre de 2025",
+                "description": "<p style='text-indent: 2em;'>Usando HTML, CSS e JasvaScript para o frontend e Python com Flask para o backend, eu criei o site no qual você está lendo isso.</p>"
+            }
+            
+        }
+
+    },
+
+    "courses": {
+        "label": "Cursos",
+        "projects": {
+            "100dayspython": {
+                "title": "100 Days of Python",
+                "period": "Segundo semestre de 2025",
+                "description": "<p style='text-indent: 2em;'>Curso de 56 horas de aula com muito conteúdo de python.</p>"
+            }
+            
+        }
+
+    },
+
+    "other": {
+        "label": "Outros",
+        "projects": {
+            "obi": {
+                "title": "OBI",
+                "period": "Primeiro semestre de 2023",
+                "description": "<p style='text-indent: 2em;'>Participei da OBI e fiquei em primeiro lugar dentre os que participaram do meu câmpus, mas não passei para a fase Estadual.</p>"
+            },
+            "hackathon": {
+                "title": "Hackathon",
+                "period": "Segundo semestre de 2025",
+                "description": "<p style='text-indent: 2em;'>Participei de um Hackathon na semana da Computação do meu câmpus e meu time ficou em primeiro.</p>"
+            }
+            
+        }
+
+    }
+}

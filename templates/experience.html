@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Experiência - {{ experience.title }}{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="display-4 fw-bold">{{ experience.title }}</h1>
+            <p class="text-orange fw-bold">{{ experience.period }}</p>
+            
+            <hr class="my-4">
+            
+            <div>
+                <div class="experience-description lead fs-4">
+                    {{ experience.description | safe }}
+                </div>
+                {% if experience.images %}
+                {% for image in experience.images %}
+                
+                <div class="experience-picture">
+                    <img src="{{ url_for('static', filename='images/experiences/' + (image or 'no-image.png')) }}" alt="{{ experience.title }}" class="img-fluid rounded shadow-sm mt-4">
+                </div>
+                {% endfor %}  
+                {% endif %}  
+            </div>
+            <div class="mt-5">
+                <a href="{{ url_for('home') }}" class="btn btn-outline-dark">← Voltar para Experiências</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

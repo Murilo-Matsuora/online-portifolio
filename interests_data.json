@@ -1,0 +1,17 @@
+{
+    "game_dev": {
+        "label": "Desenvolvimento de Jogos",
+        "description": "<p>As experiências que tive criando jogos, tanto em projetos de extensão quanto pessoais, foi muito gratificante.</p>",
+        "image": "unity_game2.png"
+    },
+    "web_dev": {
+        "label": "Desenvolvimento Web",
+        "description": "<p>Gostei dos meus projetos de desenvolvimento web, tal qual este site.</p>",
+        "image": "desenvolvimento_web2.png"
+    },
+    "python": {
+        "label": "Desenvolvimento com Python",
+        "description": "<p>Eu gostei muito de trabalhar com Python desde o início. É uma linguagem muito 'dinâmica'!</p>",
+        "image": "python_logo3.png"
+    }
+}

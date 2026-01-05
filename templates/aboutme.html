@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block title %}Sobre mim{% endblock %}
+
+{% block content %}
+
+<div class="about-me-page">
+    <section class="strip" id="about-me">
+        <div class="container px-4 py-5">
+            <h1 class="pb-2 fw-bold interests-title">Sobre mim</h1>
+            <ul class="no-bullets px-lg-5">
+                <li class="lead text-center py-2">
+                    Meu nome é Murilo Matsuora, tenho {{ age }} anos e estou cursando Ciências da Computação na Unesp de
+                    Rio
+                    Claro.
+                </li>
+                <li class="lead text-center py-2">
+                    Gosto de jogar videogames e <a href="https://www.instagram.com/muma.arts/">desenhar</a> no meu tempo
+                    livre.
+                </li>
+                <li class="lead text-center py-2">
+                    Minha cor favorita é laranja.
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="" id="interests">>
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 fw-bold interests-title border-bottom">Descubra Meus Interesses</h2>
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                {% for interest in interests.values() %}
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="{{ url_for('static', filename='images/interests/' + (interest.image)) }}"
+                                    alt="Avatar">
+                            </div>
+                            <div class="flip-card-back">
+                                <h3 class="fw-bold">{{ interest.label }}</h3>
+                                <div class="fs-4 fw-light">
+                                    {{ interest.description | safe }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section class="" id="my-socials">
+        <div class="container px-5 py-5">
+            <h2 class="pb-4 fw-bold interests-title border-bottom">Minhas Redes</h2>
+            <div class="row d-flex justify-content-center px-4">
+                <div class="col-3 py-2 d-flex justify-content-center">
+                    <a class="lead d-flex flex-column align-items-center text-decoration-none my-socials-links"
+                        href="https://github.com/Murilo-Matsuora">
+                        <i class="bi bi-github" style="font-size: 50px;"> </i>
+                        <span>Github</span>
+                    </a>
+                </div>
+                <div class="col-3 py-2 d-flex justify-content-center">
+                    <a class="lead d-flex flex-column align-items-center text-decoration-none my-socials-links"
+                        href="https://www.linkedin.com/in/murilo-matsuora-2b896330a/">
+                        <i class="bi bi-linkedin" style="font-size: 50px;"> </i>
+                        <span>Linkedin</span>
+                    </a>
+                </div>
+                <div class="col-3 py-2 d-flex justify-content-center">
+                    <a class="lead d-flex flex-column align-items-center text-decoration-none my-socials-links" id="copyEmail"
+                        href="javascript:void(0);" data-email="murilomatsuora@gmail.com"
+                        title="Clique para copiar o e-mail">
+                        <i class="bi bi-envelope-at" id="emailIcon" style="font-size: 50px;"></i>
+                        <span>E-mail</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+{% endblock %}
