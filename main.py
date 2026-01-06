@@ -1,13 +1,18 @@
 from flask import Flask, render_template, url_for
 from datetime import datetime, date
 import json
+import os
 
 app = Flask(__name__)
 
-with open('experiences_data.json', 'r', encoding='utf-8') as f:
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+EXPS_JSON_PATH = os.path.join(BASE_DIR, 'data', 'experiences_data.json')
+INTS_JSON_PATH = os.path.join(BASE_DIR, 'data', 'interests_data.json')
+
+with open(EXPS_JSON_PATH, 'r', encoding='utf-8') as f:
     all_experiences = json.load(f)
 
-with open('interests_data.json', 'r', encoding='utf-8') as f:
+with open(INTS_JSON_PATH, 'r', encoding='utf-8') as f:
     all_interests = json.load(f)
 
 @app.route('/')
